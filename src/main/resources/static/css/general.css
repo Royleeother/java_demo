@@ -1,0 +1,268 @@
+a:hover {
+    text-decoration: none;
+}
+
+.login-width {
+    width: 427px;
+}
+.logo-font {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.stroke {
+    -webkit-text-fill-color: rgba(39, 72, 180, 0.438);
+    text-shadow: 5px 0px #1b56c1;
+}
+.the-blue-i-like {
+    color: #1b56c1;
+}
+.main-font {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+
+.center-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.info_box {
+    background-color: white;
+    width: 310px;
+    position: relative;
+    display: inline-block;
+    margin-top: 11px;
+    border-radius: 4px;
+}
+
+.personal {
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.info_wrap {
+    padding: 10px;
+}
+
+.name {
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.intro {
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.nav_box {
+    position: relative;
+    display: block;
+    margin: 19px auto;
+    width: 810px;
+    vertical-align: top;
+    background-color: #fdfeffd1;
+    border-radius: 5px;
+    box-shadow: 0 25px 43px -23px rgba(0, 0, 0, 0.25);
+    min-height: 170px;
+}
+
+.nav_wrap {
+    position: relative;
+    width: 163px;
+    display: inline-block;
+    margin: 16px;
+    height: 107px;
+    background-color: #fdfeffd1;
+    border-radius: 3px;
+    box-shadow: 0 25px 43px -23px rgba(0, 0, 0, 0.25);
+}
+
+.nav_wrap:hover {
+    background-color: rgba(246, 246, 246, 0.95);
+}
+
+.box_title {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-family: serif;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    line-height: 28px;
+}
+
+.nav_top {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-family: serif;
+    font-size: 30px;
+    height: 50px;
+}
+
+.topic_wrap {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.topic_box {
+    width: 80%;
+    position: relative;
+    display: block;
+    height: 40px;
+    margin: 30px auto;
+    border-bottom: #1213161f;
+    border-bottom-style: solid;
+    color: black;
+    padding: 5px;
+}
+
+.topic_other_info {
+    position: relative;
+    display: block;
+    text-align: right;
+    color: gray;
+}
+
+.topic_title {
+    text-align: left;
+    padding: 15px 19px;
+    display: inline-block;
+}
+
+.topic_info {
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: x-small;
+    font-family: 微软雅黑;
+    color: gray;
+    margin-left: 18px;
+}
+
+.topic_content {
+    display: block;
+    text-align: left;
+    width: 90%;
+    font-size: medium;
+    font-family: monospace;
+    font-weight: 500;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.border-b {
+    border-bottom: #eaebef;
+    border-bottom-style: solid;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.topic_comment_form {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+}
+
+.textarea_ctrl {
+    resize: none;
+    padding: 2px;
+    width: 90%;
+}
+
+.topic_comments {
+
+}
+
+.comment_wrap {
+    padding: 6px;
+    font-family: serif;
+    font-size: medium;
+    display: inline-block;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.comment_info {
+    display: inline-block;
+}
+
+.comment_content {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: #a8abb6;
+    border-bottom-style: solid;
+    width: 75%;
+}
+
+.comment_ctrl {
+    text-align: right;
+    font-size: x-small;
+    color: gray;
+    padding-right: 11px;
+}
+
+.comment_time {
+    text-align: right;
+    font-size: x-small;
+    color: gray;
+}
+
+.add_topic_bar {
+    display: block;
+    width: 100%;
+    height: 24px;
+    cursor: pointer;
+    color: #091219db;
+    text-align: center;
+    padding: 5px 0px;
+    font-family: Serif;
+    font-size: larger;
+    margin: 0 auto;
+    background-color: #87889f99;
+}
+
+.add_topic_bar:hover {
+    background-color: rgba(164, 165, 184, 0.6);
+}
+
+.topic_add_title {
+    display: block;
+    border-style: none;
+    width: 700px;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+    padding: 5px;
+}
+
+.topic_add_content {
+    resize: none;
+    width: 90%;
+    height: 177px;
+    margin: 7px auto;
+    border-style: none;
+    display: block;
+    font-size: medium;
+    line-height: 28px;
+}
+
+.topic_sub_btn {
+    margin: 11px auto;
+    width: 50px;
+    display: block;
+}
+
+.form_ctrl {
+    padding-bottom: 2px;
+}

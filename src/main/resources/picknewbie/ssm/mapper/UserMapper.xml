@@ -1,0 +1,31 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="picknewbie.ssm.mapper.UserMapper">
+
+    <select id="selectAllUser" resultType="picknewbie.ssm.model.UserModel">
+        SELECT * FROM picknewbie.user
+    </select>
+
+    <select id="selectUser" resultType="picknewbie.ssm.model.UserModel">
+        SELECT * FROM picknewbie.user WHERE id = ${id}
+    </select>
+
+    <select id="selectOneByUsername" resultType="picknewbie.ssm.model.UserModel">
+        SELECT * FROM picknewbie.user WHERE username = #{username}
+    </select>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO picknewbie.user (username, password, role)  VALUES (
+        #{username}, #{password}, #{role})
+    </insert>
+
+    <update id="updateUser">
+        UPDATE picknewbie.user SET username = #{username}, password =#{password}, avatar = #{avatar} WHERE id = #{id}
+    </update>
+
+    <delete id="deleteUser">
+        DELETE FROM picknewbie.user WHERE id = #{id}
+    </delete>
+</mapper>

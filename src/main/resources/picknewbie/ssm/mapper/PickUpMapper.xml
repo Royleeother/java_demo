@@ -1,0 +1,54 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="picknewbie.ssm.mapper.PickUpMapper">
+
+<!--    <select id="findNewbiesByVolunteerId"  resultType="picknewbie.ssm.model.UserModel">-->
+<!--        select * from picknewbie.user join picknewbie.newbievolunteer-->
+<!--        on user.schoolId = newbievolunteer.schoolId-->
+<!--        where newbievolunteer.volunteerId = ${id}-->
+<!--    </select>-->
+
+    <resultMap id="findNewbiesByVolunteerIdMap" type="picknewbie.ssm.model.NewbieListModel">
+        <id property="volunteerId" column="volunteerId"/>
+        <collection property="newbieList" ofType="picknewbie.ssm.model.UserModel">
+            <id property="id" column="id" />
+            <result property="username" column="username" />
+            <result property="role" column="role" />
+            <result property="phone" column="phone" />
+            <result property="schoolId" column="schoolId" />
+            <result property="department" column="department" />
+            <result property="dorm" column="dorm" />
+            <result property="message" column="message" />
+            <result property="avatar" column="avatar" />
+            <result property="volunteerId" column="volunteerId" />
+        </collection>
+    </resultMap>
+
+    <select id="findNewbiesByVolunteerId" resultMap="findNewbiesByVolunteerIdMap">
+        select
+            user.id,
+            user.username,
+            user.role,
+            user.phone,
+            user.schoolId,
+            user.department,
+            user.dorm,
+            user.message,
+            user.avatar,
+            user.volunteerId
+        from picknewbie.user
+        join picknewbie.newbievolunteer
+        on user.schoolId = newbievolunteer.schoolId
+        where newbievolunteer.volunteerId = ${id};
+    </select>
+
+    <select id="findByVolunteerId" resultType="picknewbie.ssm.model.UserModel">
+        select * from picknewbie.user where schoolId = ${id}
+    </select>
+
+    <select id="findVolunteer" resultType="picknewbie.ssm.model.UserModel">
+        select * from picknewbie.user where volunteerId = ${id}
+    </select>
+
+</mapper>
